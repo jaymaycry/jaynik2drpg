@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Behaviour of player character
+/// </summary>
 public class SimpleCharacterWalk : MonoBehaviour {
 	public Animator animator;
 	public float speed = 3f;

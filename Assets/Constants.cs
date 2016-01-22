@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Holds Game Constants
+/// </summary>
 public class Constants : MonoBehaviour
 {
     #region InputDirections
