@@ -16,11 +16,17 @@ public class SimpleCharacterWalk : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         float horizontalInput = Input.GetAxis(Constants.Input_Horizontal);
+        animator.ResetTrigger("StartAttack");   // TEMPORARY UNTIL RUN ATTACK IS IMPLEMENTED
+
+        if (Mathf.Abs(horizontalInput) > Constants.WalkingVelocityLimit) animator.SetBool("IsRunning", true);
+        else animator.SetBool("IsRunning", false);
 
         if (Mathf.Abs(horizontalInput) > Constants.Threshold)
         {
-			animator.SetBool ("Walking", true);
-            animator.speed = Mathf.Abs(horizontalInput);
+			animator.SetBool ("IsWalking", true);
+            if (animator.GetBool("IsRunning")) animator.speed = (Mathf.Abs(horizontalInput) < Constants.MinimumRunnungAnimationSpeed)  // setup the animation speed properly
+                ? Constants.MinimumRunnungAnimationSpeed : Mathf.Abs(horizontalInput);
+            else animator.speed = 1;
 
             transform.Translate(Vector3.right * Mathf.Abs(horizontalInput) * Time.deltaTime * speed);
 
@@ -33,22 +39,22 @@ public class SimpleCharacterWalk : MonoBehaviour {
 				transform.rotation = Quaternion.Euler (0, 0, 0);
 			}
 		} else {
-			animator.SetBool ("Walking", false);
+			animator.SetBool ("IsWalking", false);
             animator.speed = 1;
 		}
 
-		if (Input.GetButton (Constants.Input_Fire1)) {
-			animator.SetTrigger ("Attacking");
+        if (Input.GetButtonDown(Constants.Input_Fire1))
+        {
+            animator.SetTrigger("StartAttack");
 		}
 
         if (Input.GetKeyDown(Constants.Input_Space))
         {
-            animator.SetTrigger("Dodge");
-            transform.Translate(Vector3.left * 1f);
+            animator.SetTrigger("StartAttack");
         }
         if (Input.GetKeyDown("e"))
         {
-            animator.SetTrigger("ScratchHead");
+            animator.SetTrigger("StartScratchHead");
         }
 
 	}
