@@ -6,7 +6,6 @@ using System.Collections;
 /// </summary>
 public class SimpleCharacterWalk : MonoBehaviour {
 	public Animator animator;
-    public Motion Character_attack_1;
 	public float speed = 3f;
     private float lastHorizontalInput = 1f; // used for attack direction movement
 
@@ -20,7 +19,8 @@ public class SimpleCharacterWalk : MonoBehaviour {
     /// </summary>
     private void updateStateBooleans()
     {
-        animator.SetBool("IsAttacking", Utilities.IsAnimationPlaying("Character_attack1", animator));
+        animator.SetBool("IsAttacking", Utilities.IsAnimationPlaying("Character_attack1", animator) 
+            || Utilities.IsAnimationPlaying("Character_attack2", animator));
     }
 	
 	// Update is called once per frame
@@ -67,7 +67,7 @@ public class SimpleCharacterWalk : MonoBehaviour {
             animator.SetTrigger("StartAttack");
             animator.SetBool("IsAttacking", true);        
 		}
-        if (animator.GetBool("IsAttacking"))
+        if (animator.GetBool("IsAttacking") && !Utilities.IsAnimationPlaying("Character_attack2", animator))
         {
             transform.Translate(Vector3.right * Constants.AttackMovement * Time.deltaTime * speed);
 
