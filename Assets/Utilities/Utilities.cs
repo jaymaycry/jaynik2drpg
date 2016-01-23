@@ -21,4 +21,19 @@ public class Utilities : MonoBehaviour {
         }
         return false;
     }
+
+    /// <summary>
+    /// Returns true when the current state is active.
+    /// </summary>
+    /// <param name="name">name of state</param>
+    /// <param name="animator">animator object</param>
+    /// <returns></returns>
+    public static bool IsStateActive(string name, Animator animator)
+    {
+        for (int i = 0; i < animator.layerCount; i++)
+        {
+            if (animator.GetCurrentAnimatorStateInfo(i).IsName(name)) return true;
+        }
+        return false;
+    }
 }

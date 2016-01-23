@@ -33,7 +33,7 @@ public class SimpleCharacterWalk : MonoBehaviour {
         updateStateBooleans();
 
         if (animator.GetBool("IsAttacking")) animator.ResetTrigger("StartHardAttack");
-        if (!animator.GetBool("IsAttacking")) animator.ResetTrigger("ExecuteHardAttack");
+        if (Utilities.IsStateActive("Character_hardattack02", animator)) animator.ResetTrigger("ExecuteHardAttack");    // Prohibit that next attack gets fired immediatly
 
         #region Movement
         if (Mathf.Abs(horizontalInput) > Constants.WalkingVelocityLimit) animator.SetBool("IsRunning", true);
@@ -75,7 +75,7 @@ public class SimpleCharacterWalk : MonoBehaviour {
 		if (Input.GetButtonDown(Constants.Input_Fire2))
 		{
 			animator.SetTrigger("StartHardAttack");
-			animator.SetBool("IsAttacking", true);        
+			animator.SetBool("IsAttacking", true);
 		}
 		if (Input.GetButtonUp(Constants.Input_Fire2))
 		{
