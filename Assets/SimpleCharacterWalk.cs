@@ -19,8 +19,10 @@ public class SimpleCharacterWalk : MonoBehaviour {
     /// </summary>
     private void updateStateBooleans()
     {
-        animator.SetBool("IsAttacking", Utilities.IsAnimationPlaying("Character_attack1", animator) 
-            || Utilities.IsAnimationPlaying("Character_attack2", animator));
+		animator.SetBool ("IsAttacking", Utilities.IsAnimationPlaying ("Character_attack1", animator)
+		|| Utilities.IsAnimationPlaying ("Character_attack2", animator)
+		|| Utilities.IsAnimationPlaying ("Character_attack3", animator)
+		|| Utilities.IsAnimationPlaying ("Character_attack4", animator));
     }
 	
 	// Update is called once per frame
@@ -67,7 +69,10 @@ public class SimpleCharacterWalk : MonoBehaviour {
             animator.SetTrigger("StartAttack");
             animator.SetBool("IsAttacking", true);        
 		}
-        if (animator.GetBool("IsAttacking") && !Utilities.IsAnimationPlaying("Character_attack2", animator))
+		if (animator.GetBool("IsAttacking") 
+			&& !Utilities.IsAnimationPlaying("Character_attack2", animator) 
+			&& !Utilities.IsAnimationPlaying("Character_attack3", animator)
+			&& !Utilities.IsAnimationPlaying("Character_attack4", animator))
         {
             transform.Translate(Vector3.right * Constants.AttackMovement * Time.deltaTime * speed);
 
