@@ -14,6 +14,7 @@ public class Constants : MonoBehaviour
     public static readonly string Input_Fire1 = "Fire1";
 	public static readonly string Input_Fire2 = "Fire2";
     public static readonly string Input_Space = "space";
+    public static readonly string Input_Jump = "Jump";
     #endregion
 
     #region Math
@@ -22,6 +23,7 @@ public class Constants : MonoBehaviour
     public static readonly float MinimumRunnungAnimationSpeed = 0.7f;
     public static readonly float AttackMovement = 0.3f;
     public static readonly float AttackForwardForce = 16000f;
+    public static readonly float JumpForce = 20000f;
     #endregion
 
 }

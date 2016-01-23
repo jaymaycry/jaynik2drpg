@@ -7,13 +7,15 @@ using System.Collections;
 public class CharacterBehaviour : MonoBehaviour {
 	public Animator animator;
 	public float speed = 3f;
-    public Rigidbody2D collisionBox;
+    public Rigidbody2D rigidbody;
+    public BoxCollider2D collisionBox;
+
     private float lastHorizontalInput = 1f; // used for attack direction movement
     private RigitMovementManager rigitMovementManager;
 
 	// Use this for initialization
 	void Start () {
-        rigitMovementManager = new RigitMovementManager(collisionBox, animator);
+        rigitMovementManager = new RigitMovementManager(rigidbody, collisionBox, animator);
         rigitMovementManager.MovementSpeed = speed;
         
 	}
@@ -42,6 +44,8 @@ public class CharacterBehaviour : MonoBehaviour {
         #region Movement
         if (Mathf.Abs(horizontalInput) > Constants.WalkingVelocityLimit) animator.SetBool("IsRunning", true);
         else animator.SetBool("IsRunning", false);
+
+        rigitMovementManager.HandleJumps(); // handle jumping of character
 
         if (Mathf.Abs(horizontalInput) > Constants.Threshold && !animator.GetBool("IsAttacking"))
         {
@@ -75,10 +79,10 @@ public class CharacterBehaviour : MonoBehaviour {
                 && !Utilities.IsStateActive("Character_attack1", animator)
                 && !Utilities.IsStateActive("Character_attack1", animator)
                 && !Utilities.IsStateActive("Character_attack1", animator)
-                && collisionBox.velocity.magnitude < Constants.Threshold)   // wait until body rests before add new force
+                && rigidbody.velocity.magnitude < Constants.Threshold)   // wait until body rests before add new force
             {
-                if (lastHorizontalInput < 0) collisionBox.AddForce(Vector2.left * Constants.AttackForwardForce);
-                else collisionBox.AddForce(Vector2.right * Constants.AttackForwardForce);
+                if (lastHorizontalInput < 0) rigidbody.AddForce(Vector2.left * Constants.AttackForwardForce);
+                else rigidbody.AddForce(Vector2.right * Constants.AttackForwardForce);
             }
 		}
 		if (Input.GetButtonDown(Constants.Input_Fire2))
@@ -89,8 +93,8 @@ public class CharacterBehaviour : MonoBehaviour {
 		if (Input.GetButtonUp(Constants.Input_Fire2))
 		{
 			animator.SetTrigger("ExecuteHardAttack");
-            if (lastHorizontalInput < 0) collisionBox.AddForce(Vector2.left * Constants.AttackForwardForce);
-            else collisionBox.AddForce(Vector2.right * Constants.AttackForwardForce);
+            if (lastHorizontalInput < 0) rigidbody.AddForce(Vector2.left * Constants.AttackForwardForce);
+            else rigidbody.AddForce(Vector2.right * Constants.AttackForwardForce);
 		}
 
         if (Input.GetKeyDown(Constants.Input_Space))
