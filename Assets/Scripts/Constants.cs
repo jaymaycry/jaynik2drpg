@@ -12,6 +12,7 @@ public class Constants : MonoBehaviour
 
     #region InputKeys
     public static readonly string Input_Fire1 = "Fire1";
+	public static readonly string Input_Fire2 = "Fire2";
     public static readonly string Input_Space = "space";
     #endregion
 

@@ -22,7 +22,9 @@ public class SimpleCharacterWalk : MonoBehaviour {
 		animator.SetBool ("IsAttacking", Utilities.IsAnimationPlaying ("Character_attack1", animator)
 		|| Utilities.IsAnimationPlaying ("Character_attack2", animator)
 		|| Utilities.IsAnimationPlaying ("Character_attack3", animator)
-		|| Utilities.IsAnimationPlaying ("Character_attack4", animator));
+		|| Utilities.IsAnimationPlaying ("Character_attack4", animator)
+		|| Utilities.IsAnimationPlaying ("Character_hardattack1", animator)
+		|| Utilities.IsAnimationPlaying ("Character_hardattack2", animator));
     }
 	
 	// Update is called once per frame
@@ -31,6 +33,7 @@ public class SimpleCharacterWalk : MonoBehaviour {
         updateStateBooleans();
 
         //if (animator.GetBool("IsAttacking")) animator.ResetTrigger("StartAttack");
+		if (!animator.GetBool("IsAttacking")) animator.ResetTrigger("ExecuteHardAttack");
 
         #region Movement
         if (Mathf.Abs(horizontalInput) > Constants.WalkingVelocityLimit) animator.SetBool("IsRunning", true);
@@ -69,10 +72,16 @@ public class SimpleCharacterWalk : MonoBehaviour {
             animator.SetTrigger("StartAttack");
             animator.SetBool("IsAttacking", true);        
 		}
-		if (animator.GetBool("IsAttacking") 
-			&& !Utilities.IsAnimationPlaying("Character_attack2", animator) 
-			&& !Utilities.IsAnimationPlaying("Character_attack3", animator)
-			&& !Utilities.IsAnimationPlaying("Character_attack4", animator))
+		if (Input.GetButtonDown(Constants.Input_Fire2))
+		{
+			animator.SetTrigger("StartHardAttack");
+			animator.SetBool("IsAttacking", true);        
+		}
+		if (Input.GetButtonUp(Constants.Input_Fire2))
+		{
+			animator.SetTrigger("ExecuteHardAttack");
+		}
+		if (animator.GetBool("IsAttacking") && Utilities.IsAnimationPlaying("Character_attack1", animator))
         {
             transform.Translate(Vector3.right * Constants.AttackMovement * Time.deltaTime * speed);
 
