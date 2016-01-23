@@ -28,7 +28,7 @@ public class SimpleCharacterWalk : MonoBehaviour {
         float horizontalInput = Input.GetAxis(Constants.Input_Horizontal);
         updateStateBooleans();
 
-        if (animator.GetBool("IsAttacking")) animator.ResetTrigger("StartAttack");
+        //if (animator.GetBool("IsAttacking")) animator.ResetTrigger("StartAttack");
 
         #region Movement
         if (Mathf.Abs(horizontalInput) > Constants.WalkingVelocityLimit) animator.SetBool("IsRunning", true);
