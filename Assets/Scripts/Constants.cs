@@ -21,6 +21,7 @@ public class Constants : MonoBehaviour
     public static readonly float WalkingVelocityLimit = 0.35f;
     public static readonly float MinimumRunnungAnimationSpeed = 0.7f;
     public static readonly float AttackMovement = 0.3f;
+    public static readonly float AttackForwardForce = 16000f;
     #endregion
 
 }
