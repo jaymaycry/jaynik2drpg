@@ -23,8 +23,8 @@ public class SimpleCharacterWalk : MonoBehaviour {
 		|| Utilities.IsAnimationPlaying ("Character_attack2", animator)
 		|| Utilities.IsAnimationPlaying ("Character_attack3", animator)
 		|| Utilities.IsAnimationPlaying ("Character_attack4", animator)
-		|| Utilities.IsAnimationPlaying ("Character_hardattack1", animator)
-		|| Utilities.IsAnimationPlaying ("Character_hardattack2", animator));
+		|| Utilities.IsAnimationPlaying ("Character_hardattack01", animator)
+		|| Utilities.IsAnimationPlaying ("Character_hardattack02", animator));
     }
 	
 	// Update is called once per frame
@@ -32,8 +32,8 @@ public class SimpleCharacterWalk : MonoBehaviour {
         float horizontalInput = Input.GetAxis(Constants.Input_Horizontal);
         updateStateBooleans();
 
-        //if (animator.GetBool("IsAttacking")) animator.ResetTrigger("StartAttack");
-		if (!animator.GetBool("IsAttacking")) animator.ResetTrigger("ExecuteHardAttack");
+        if (animator.GetBool("IsAttacking")) animator.ResetTrigger("StartHardAttack");
+        if (!animator.GetBool("IsAttacking")) animator.ResetTrigger("ExecuteHardAttack");
 
         #region Movement
         if (Mathf.Abs(horizontalInput) > Constants.WalkingVelocityLimit) animator.SetBool("IsRunning", true);
@@ -81,7 +81,8 @@ public class SimpleCharacterWalk : MonoBehaviour {
 		{
 			animator.SetTrigger("ExecuteHardAttack");
 		}
-		if (animator.GetBool("IsAttacking") && Utilities.IsAnimationPlaying("Character_attack1", animator))
+		if (animator.GetBool("IsAttacking") &&
+            (Utilities.IsAnimationPlaying("Character_attack1", animator)))
         {
             transform.Translate(Vector3.right * Constants.AttackMovement * Time.deltaTime * speed);
 
