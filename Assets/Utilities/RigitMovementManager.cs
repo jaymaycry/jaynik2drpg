@@ -90,9 +90,9 @@ public class RigitMovementManager{
        /* return Physics2D.Raycast(_rigidbody.position, Vector2.down, _collisionBox.size.y)
             || Physics2D.Raycast(_rigidbody.position + Vector2.right * _collisionBox.size.x/2, Vector2.down, _collisionBox.size.y);*/
         //return Physics2D.Raycast(_rigidbody.position, Vector2.down, _collisionBox.size.y);
-        return Physics2D.Raycast(_rigidbody.position, Vector2.down, _collisionBox.size.y)
-            || Physics2D.Raycast(_rigidbody.position + Vector2.right * _collisionBox.size.x / 2, Vector2.down, _collisionBox.size.y)
-            || Physics2D.Raycast(_rigidbody.position - Vector2.right * _collisionBox.size.x / 2, Vector2.down, _collisionBox.size.y);
+        return Physics2D.Raycast(_rigidbody.position, Vector2.down, _collisionBox.size.y + Constants.Threshold)
+            || Physics2D.Raycast(_rigidbody.position + Vector2.right * _collisionBox.size.x / 2, Vector2.down, _collisionBox.size.y + Constants.Threshold)
+            || Physics2D.Raycast(_rigidbody.position - Vector2.right * _collisionBox.size.x / 2, Vector2.down, _collisionBox.size.y + Constants.Threshold);
     }
 
     /// <summary>
