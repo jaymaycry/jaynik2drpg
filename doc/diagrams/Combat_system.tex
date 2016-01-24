@@ -1,0 +1,107 @@
+\documentclass{article}
+
+\usepackage[paperwidth=43cm, paperheight=27cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{decorations.pathreplacing,shapes,arrows,positioning}
+\usetikzlibrary{calc} 
+\usepackage[]{xcolor}
+\usetikzlibrary{positioning}
+\begin{document}
+\pagestyle{empty}
+
+
+% Define block styles
+\tikzstyle{decision} = [diamond, draw, fill=green!20, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=green!20, 
+    text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+    
+\hphantom{1}\hspace{-6cm}\begin{tikzpicture}[node distance = 3cm and 3cm, auto]
+    % Place nodes
+    \node [block, fill=green!60] (idle) {character idle};
+    \node [block, below=3cm of idle] (walk) {character walking};
+    \node [block, left=of walk] (run) {character running};
+    \node [block, left=of run] (sprint) {character sprinting};
+    \node [block, below=4cm of walk] (attack1) {Attack 1};
+    \node [block, left=3.6cm of attack1] (attack2) {Attack 2};
+    \node [block, left=3.6cm of attack2] (attack3) {Attack 3};
+    \node [block, right=3cm of attack1] (heavyAttackCharge) {Charge Heavy Attack};
+    \node [block, right=3.5cm of heavyAttackCharge] (heavyAttack) {Heavy Attack};
+    \node [block, left of=attack3] (jumpAttack) {Jump Attack};
+    \node [block, left=2cm of jumpAttack] (sprintAttack) {Sprint Attack};
+    \node [block, above=3.5cm of idle] (riposte) {Riposte};
+    \node [block, left=4cm of riposte] (riposteAttack) {Riposte Massive Damage Attack};
+    \node [block, right=4cm of riposte] (finishingMove) {Finishing Move (instakill)};
+    \node [block, right =3.5cm of finishingMove] (backstab) {Backstab};
+    \node [block, right=5cm of walk] (block) {Block};
+    \node [block, right=4cm of block] (roll) {Roll to Dodge};
+    \node [block, right=of roll] (fatRoll) {Fat Roll};
+    
+    % Draw edges
+    % draw edges layer 1,2
+    \path [line] (idle.-80) -- node {(IsWalking)} (walk.80);
+    \path [line] (walk.100) -- node {(!IsWalking)} (idle.260);
+    \path [line] (walk.190) -- node {(IsRunning)} (run.-10);
+    \path [line] (run.10) -- node {(!IsRunning)} (walk.170);
+    \path [line] (run.90) -- node[sloped, align=center, pos=0.8] {(!IsWalking)\\ and(!IsRunning)} (idle.230);
+    \draw [line] (run.-80) |- ++(1,-1.5) -| node[align=center,above, pos=0.4] {(StartDodge)\\ and (enoughStamina())\\ DrainStamina()} (roll.south);
+    \draw [line] (run.-100) |- ++(1,-1.8) -| node[align=center,below, pos=0.3] {(StartDodge)\\ and (GearWeight$>50\%$ MaxGearWeight)\\ and (enoughStamina())\\ DrainStamina()} (fatRoll.south);
+    \draw [line] (roll.100) |- (idle.east);
+    \draw [line] (fatRoll.100) |- (idle.20);
+    \draw [line] (block.100) |- node[align=center, left, pos=0.2] {(Stamina=0)\\ or (!IsBlocking)} (idle.-20);
+    \draw [line] (idle.10) -| node[align=center,pos=0.8] {(StartDodge)\\ and (enoughStamina())\\ DrainStamina()} (roll.80);
+    \draw [line] (idle.30) -| node[align=center,pos=0.4,above] {(StartDodge)\\ and (GearWeight$>50\%$MaxGearWeight)\\ and (enoughStamina()) \\ DrainStamina()} (fatRoll.80);
+    \draw [line] (idle.-10) -| node[align=center,right,pos=0.8] {(Stamina $>$ 0)\\ und (IsBlocking)} (block.80);
+    \path[line] (block.-20) -- ++(1,0) |- node[align=center,right,pos=0.3]{(IsBlocking)\\ DrainStamina()} (block.20);
+    \draw [line] (walk.-20) -- node[align=center,above] {(Stamina$>$0)\\ und (IsBlocking)} (block.200);
+    \draw [line] (walk.-60) |- ++(1,-1.5) -| (roll);
+    \draw [line] (walk.-80) |- ++(1,-1.8) -| (fatRoll);
+   	\draw [line] (sprint.100) |- node[align=center,above,pos=0.7] {(!IsSprinting)\\ or (Stamina=0)} (idle.210);
+   	\draw [line] (idle.220) -| node[below,align=center,pos=0.35] {(IsSprinting)\\ and (Stamina$>0$)} (sprint.80);
+   	\draw [line] (sprint.160) -| ++ (-0.5,0) |- node[align=center,left,pos=0.3] {DrainStamina()} (sprint.200);
+   	\draw [line] (run.150) -- node[align=center,above] {(IsSprinting)\\ and (Stamina$>0$)} (sprint.30);
+   	\draw [line] (sprint.20) -- node[align=center,below] {((!IsSprinting)\\ or (Stamina$=0$))\\ and (IsRunning)} (run.160);
+   	\draw [line] (sprint.-60) |- ++ (0,-0.6) -| node[align=center,below,pos=0.15] {((!IsSprinting)\\ or (Stamina$=0$))\\ and (IsWalking)} (walk.-130);
+    
+    % layer 2,3
+    \draw [line] (sprint.230) |- ++ (0,-1) -| node[align=center,left,pos=0.7] {(StartAttack)\\ and (enoughStamina())\\ DrainStamina()} (sprintAttack);
+    \draw [line] (sprintAttack.west) -| ++ (-3,0) |- (idle.150);
+    \draw [line] (sprint.south) |- ++ (0,-1.3) -| node[align=center,left,pos=0.8] {(!IsOnGround)\\ and (StartAttack)\\ and (enoughStamina())\\ DrainStamina()} (jumpAttack.north);
+    \draw [line] (jumpAttack.80) -- (idle.-130);
+    \draw [line] (walk.-100) -- node[align=center,left,pos=0.7] {(StartAttack)\\ and (enoughStamina())\\ DrainStamina())} (attack1.100);
+    \draw [line] (run.-60) |- ++ (0,-1) -| (attack1.100);
+    \draw [line] (block.south) |- ++ (0,-1) -| (attack1.100);
+    \draw [line] (walk.-60) |- ++ (0,-2) -| node[align=center,left,pos=0.7] {(StartHardAttack)\\ and (enoughStamina())\\ DrainStamina())} (heavyAttackCharge.north);
+    \draw [line] (run.-60) |- ++ (0,-2) -| (heavyAttackCharge.north);
+    \draw [line] (block.south) |- ++ (0,-2) -| (heavyAttackCharge.north);
+    \draw [line] (attack1.60) -- (idle.-60);
+    \draw [line] (attack2.north) -- (idle.-105);
+    \draw [line] (attack3.north) -- (idle.-110);
+    \draw [line] (heavyAttack.north) -- (idle.-40);
+    
+    % layer 3
+    \draw [line] (attack1) -- node[align=center,below] {(StartAttack)\\ and (enoughStamina()) \\ DrainStamina()} (attack2);
+    \draw [line] (attack2) -- node[align=center,below] {(StartAttack)\\ and (enoughStamina()) \\ DrainStamina()} (attack3);
+    \draw [line] (heavyAttackCharge.east) -- node[align=center,below] {(ExecuteHardAttack)\\ or (Stamina=0)} (heavyAttack.west);
+    \draw [line] (heavyAttackCharge.-130) |- ++ (0,-0.5) -| node[below] {(DrainStamina())} (heavyAttackCharge.-70);
+    
+    % riposte/backstab layer
+    \draw [line] (idle.60) -- node[align=center,left] {(IsBlocking)\\ and (Enemy.IsInReposteWindow)\\ and (Stamina$>0$) } (riposte.-60);
+    \draw [line] (riposte.200) -- node[align=center,above] {(StartAttack)\\ and (enoughStamina())\\ (!Enemy.IsHealthCritical)\\ DrainStamina()} (riposteAttack.-20);
+    \draw [line] (riposteAttack.south) |- ++ (0,-3) -| (idle.120);
+    \draw [line] (riposte) -- node[align=center,above] {(StartAttack)\\ and (enoughStamina())\\ (Enemy.IsHealthCritical)\\ DrainStamina()} (finishingMove);
+    \draw [line] (finishingMove.-120) |- ++ (0,-0.5) -| (idle.50);
+    
+    % backstab
+    \draw [line] (idle.100) |- ++ (8,1.5) |- node[align=center,pos=0.7] {(IsBehindEnemy()) \\ and (enoughStamina())\\ and (StartAttack)} (backstab.160); 
+    \draw [line] (backstab.west) -| ++ (-0.5,-3) -| (idle.90);
+    
+\end{tikzpicture}
+
+
+\end{document}
