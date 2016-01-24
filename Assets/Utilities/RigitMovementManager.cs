@@ -87,8 +87,21 @@ public class RigitMovementManager{
     /// <returns></returns>
     public bool IsOnGround()
     {
+       /* return Physics2D.Raycast(_rigidbody.position, Vector2.down, _collisionBox.size.y)
+            || Physics2D.Raycast(_rigidbody.position + Vector2.right * _collisionBox.size.x/2, Vector2.down, _collisionBox.size.y);*/
+        //return Physics2D.Raycast(_rigidbody.position, Vector2.down, _collisionBox.size.y);
         return Physics2D.Raycast(_rigidbody.position, Vector2.down, _collisionBox.size.y)
-            || Physics2D.Raycast(_rigidbody.position + Vector2.right * _collisionBox.size.x, Vector2.down, _collisionBox.size.y);
+            || Physics2D.Raycast(_rigidbody.position + Vector2.right * _collisionBox.size.x / 2, Vector2.down, _collisionBox.size.y)
+            || Physics2D.Raycast(_rigidbody.position - Vector2.right * _collisionBox.size.x / 2, Vector2.down, _collisionBox.size.y);
+    }
+
+    /// <summary>
+    /// Returns if body is falling.
+    /// </summary>
+    /// <returns></returns>
+    public bool IsFalling()
+    {
+        return !IsOnGround() && _rigidbody.velocity.y < Constants.Threshold;
     }
 }
 

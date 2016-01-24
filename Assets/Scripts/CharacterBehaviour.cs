@@ -46,6 +46,8 @@ public class CharacterBehaviour : MonoBehaviour {
         else animator.SetBool("IsRunning", false);
 
         rigitMovementManager.HandleJumps(); // handle jumping of character
+        animator.SetBool("IsOnGround", rigitMovementManager.IsOnGround());
+        animator.SetBool("IsFalling", rigitMovementManager.IsFalling());
 
         if (Mathf.Abs(horizontalInput) > Constants.Threshold && !animator.GetBool("IsAttacking"))
         {
