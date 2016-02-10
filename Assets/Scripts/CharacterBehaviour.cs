@@ -78,9 +78,6 @@ public class CharacterBehaviour : MonoBehaviour {
             animator.SetBool("IsAttacking", true);
 
             if (!Utilities.IsStateActive("Character_attack1", animator) // only add force on attack 1
-                && !Utilities.IsStateActive("Character_attack1", animator)
-                && !Utilities.IsStateActive("Character_attack1", animator)
-                && !Utilities.IsStateActive("Character_attack1", animator)
                 && rigidbody.velocity.magnitude < Constants.Threshold)   // wait until body rests before add new force
             {
                 if (lastHorizontalInput < 0) rigidbody.AddForce(Vector2.left * Constants.AttackForwardForce);
@@ -95,14 +92,19 @@ public class CharacterBehaviour : MonoBehaviour {
 		if (Input.GetButtonUp(Constants.Input_Fire2))
 		{
 			animator.SetTrigger("ExecuteHardAttack");
-            if (lastHorizontalInput < 0) rigidbody.AddForce(Vector2.left * Constants.AttackForwardForce);
-            else rigidbody.AddForce(Vector2.right * Constants.AttackForwardForce);
+            if (rigidbody.velocity.magnitude < Constants.Threshold)
+            {
+                if (lastHorizontalInput < 0) rigidbody.AddForce(Vector2.left * Constants.AttackForwardForce);
+                else rigidbody.AddForce(Vector2.right * Constants.AttackForwardForce);
+            }
 		}
 
+        // Dodge will be implemented with new combat system
+        /*
         if (Input.GetKeyDown(Constants.Input_Space))
         {
             animator.SetTrigger("StartDodge");
-        }
+        }*/
         #endregion
 
         if (Input.GetKeyDown("e"))

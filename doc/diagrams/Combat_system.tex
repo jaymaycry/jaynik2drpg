@@ -34,7 +34,8 @@
     \node [block, right=3.5cm of heavyAttackCharge] (heavyAttack) {Heavy Attack};
     \node [block, left of=attack3] (jumpAttack) {Jump Attack};
     \node [block, left=2cm of jumpAttack] (sprintAttack) {Sprint Attack};
-    \node [block, above=3.5cm of idle] (riposte) {Riposte};
+    \node [block, above=3.5cm of idle] (shieldAttack) {Shield Attack};
+    \node [block, above=3.5cm of shieldAttack] (riposte) {Riposte};
     \node [block, left=4cm of riposte] (riposteAttack) {Riposte Massive Damage Attack};
     \node [block, right=4cm of riposte] (finishingMove) {Finishing Move (instakill)};
     \node [block, right =3.5cm of finishingMove] (backstab) {Backstab};
@@ -91,15 +92,18 @@
     \draw [line] (heavyAttackCharge.-130) |- ++ (0,-0.5) -| node[below] {(DrainStamina())} (heavyAttackCharge.-70);
     
     % riposte/backstab layer
-    \draw [line] (idle.60) -- node[align=center,left] {(IsBlocking)\\ and (Enemy.IsInReposteWindow)\\ and (Stamina$>0$) } (riposte.-60);
+    \draw [line] (idle.120) -- node[align=center,left,pos=0.9] {(ShieldAttack)\\ and (enoughStamina())\\ DrainStamina()} (shieldAttack.-120);
     \draw [line] (riposte.200) -- node[align=center,above] {(StartAttack)\\ and (enoughStamina())\\ (!Enemy.IsHealthCritical)\\ DrainStamina()} (riposteAttack.-20);
-    \draw [line] (riposteAttack.south) |- ++ (0,-3) -| (idle.120);
+    \draw [line] (riposteAttack.south) |- ++ (0,-6.5) -| (idle.140);
     \draw [line] (riposte) -- node[align=center,above] {(StartAttack)\\ and (enoughStamina())\\ (Enemy.IsHealthCritical)\\ DrainStamina()} (finishingMove);
-    \draw [line] (finishingMove.-120) |- ++ (0,-0.5) -| (idle.50);
+    \draw [line] (finishingMove.-120) |- ++ (0,-6.5) -| (idle.50);
+    \draw [line] (riposte.south) -- node[align=center,left,pos=0.2] {(RiposteTimeOver)} (idle.north);
+    \draw [line] (shieldAttack.-60) -- (idle.60);
+    \draw [line] (shieldAttack.80) -- node[align=center,right] {(Enemy.IsInRiposteWindow())} (riposte.-80);
     
     % backstab
     \draw [line] (idle.100) |- ++ (8,1.5) |- node[align=center,pos=0.7] {(IsBehindEnemy()) \\ and (enoughStamina())\\ and (StartAttack)} (backstab.160); 
-    \draw [line] (backstab.west) -| ++ (-0.5,-3) -| (idle.90);
+    \draw [line] (backstab.west) -| ++ (-0.5,-8) -| (idle.90);
     
 \end{tikzpicture}
 

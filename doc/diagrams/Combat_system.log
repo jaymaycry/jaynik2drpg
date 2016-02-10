@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.22)  24 JAN 2016 18:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.7)  10 FEB 2016 18:09
 entering extended mode
 **Combat_system.tex
-(D:\Projects\2dRPGUnity\jaynik2drpg\doc\diagrams\Combat_system.tex
+(C:\Data\Projects\jaynik2drpg\doc\diagrams\Combat_system.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,9 +13,9 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -30,22 +30,22 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -61,58 +61,64 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
 File: latin1.def 2008/03/30 v1.1d Input encoding file
 ))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.te
-x"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer
+\tikz.sty
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pg
+f.sty
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgf
+rcs.sty
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\p
+gfutil-common.tex
 \pgfutil@everybye=\toks18
 \pgfutil@tempdima=\dimen111
 \pgfutil@tempdimb=\dimen112
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-li
-sts.tex"))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def
-"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\p
+gfutil-common-lists.tex))
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\p
+gfutil-latex.def
 \pgfutil@abb=\box26
- ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
-Package: pgfrcs 2015/08/07 v3.0.1 (rcs-revision 1.31)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\p
+gfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
-Package: pgf 2015/08/07 v3.0.1 (rcs-revision 1.15)
- ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pg
+fcore.sty ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count90
@@ -120,17 +126,19 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex
-"
-Package: pgfsys 2014/07/09 v3.0.1 (rcs-revision 1.48)
- ("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
-"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\systemlayer\p
+gfsys.sty
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer
+\pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\p
+gfkeys.code.tex
 \pgfkeys@pathtoks=\toks19
 \pgfkeys@temptoks=\toks20
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.c
-ode.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\p
+gfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks21
 ))
 \pgf@x=\dimen115
@@ -151,32 +159,33 @@ ode.tex"
 \t@pgf@tokb=\toks23
 \t@pgf@tokc=\toks24
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer
+\pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.d
-ef"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer
+\pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-p
-df.def"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer
+\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.
-code.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer
+\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count95
 \pgfsyssoftpath@bigbuffer@items=\count96
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.
-code.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer
+\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-)) ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+))
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
-
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -190,14 +199,18 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex
-"
-Package: pgfcore 2010/04/11 v3.0.1 (rcs-revision 1.7)
- ("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex
-"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+h.code.tex
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+hcalc.code.tex
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+hutil.code.tex)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+hparser.code.tex
 \pgfmath@dimen=\dimen123
 \pgfmath@count=\count97
 \pgfmath@box=\box27
@@ -205,29 +218,30 @@ Package: pgfcore 2010/04/11 v3.0.1 (rcs-revision 1.7)
 \pgfmath@stack@operand=\toks26
 \pgfmath@stack@operation=\toks27
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.
-tex"
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic
-.code.tex")
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigo
-nometric.code.tex")
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.rando
-m.code.tex")
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.compa
-rison.code.tex")
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.
-code.tex")
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round
-.code.tex")
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.
-code.tex")
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integ
-erarithmetics.code.tex")))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+hfunctions.code.tex
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+hfunctions.basic.code.tex)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+hfunctions.trigonometric.code.tex)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+hfunctions.random.code.tex)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+hfunctions.comparison.code.tex)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+hfunctions.base.code.tex)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+hfunctions.round.code.tex)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+hfunctions.misc.code.tex)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+hfunctions.integerarithmetics.code.tex)))
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+hfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count98
 ))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.co
-de.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen124
 \pgf@picmaxx=\dimen125
@@ -244,122 +258,129 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen136
 \pgf@zy=\dimen137
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconst
-ruct.code.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen138
 \pgf@path@lasty=\dimen139
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage
-.code.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen140
 \pgf@shorten@start@additional=\dimen141
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.co
-de.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box28
 \pgf@hbox=\box29
 \pgf@layerbox@main=\box30
 \pgf@picture@serial@count=\count99
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicst
-ate.code.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen142
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransform
-ations.code.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen143
 \pgf@pt@y=\dimen144
 \pgf@pt@temp=\dimen145
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.cod
-e.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.c
-ode.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathproce
-ssing.code.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.co
-de.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen146
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.cod
-e.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen147
 \pgf@sys@shading@range@num=\count100
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.cod
-e.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.
-code.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box31
 ))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.co
-de.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretranspare
-ncy.code.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.
-code.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\
+pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.cod
-e.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgf
+moduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box32
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.
-tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgf
+moduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version
--0-65.sty"
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.1 (rcs-revision 1.7)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility
+\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen148
 \pgf@nodesepend=\dimen149
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version
--1-18.sty"
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.1 (rcs-revision 1.1)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility
+\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 ))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
-)) ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty"
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
-Package: pgffor 2013/12/13 v3.0.1 (rcs-revision 1.25)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgf
+for.sty
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgf
+keys.sty
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\p
+gfkeys.code.tex))
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\math\pgfmath.
+sty
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+h.code.tex))
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\p
+gffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmat
+h.code.tex)
 \pgffor@iter=\dimen150
 \pgffor@skip=\dimen151
 \pgffor@stack=\toks28
 \pgffor@toks=\toks29
 ))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.cod
-e.tex"
-Package: tikz 2015/08/07 v3.0.1 (rcs-revision 1.151)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlay
+er\tikz\tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothan
-dlers.code.tex"
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1 (rcs-revision 1.20)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\p
+gflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count101
 \pgfplotmarksize=\dimen152
 )
@@ -378,8 +399,8 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1 (rcs-revision 1.20)
 \tikznumberofcurrentchild=\count104
 \tikz@fig@count=\count105
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.cod
-e.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgf
+modulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count106
 \pgfmatrixcurrentcolumn=\count107
@@ -387,59 +408,61 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 )
 \tikz@expandcount=\count109
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibrarytopaths.code.tex"
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1 (rcs-revision 1.2)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibraryshapes.code.tex"
-File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1 (rcs-revision 1.1)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibraryshapes.geometric.code.tex"
-File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1 (rcs-revision 1.1)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
 
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\s
+hapes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibrary
-shapes.geometric.code.tex"
-File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1 (rcs-revision 1.1)
 ))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibraryshapes.misc.code.tex"
-File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1 (rcs-revision 1.1)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibrary
-shapes.misc.code.tex"
-File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1 (rcs-revision 1.5)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\s
+hapes\pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
 ))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibraryshapes.symbols.code.tex"
-File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1 (rcs-revision 1.1)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibrary
-shapes.symbols.code.tex"
-File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1 (rcs-revision 1.6)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\s
+hapes\pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
 ))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibraryshapes.arrows.code.tex"
-File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1 (rcs-revision 1.1)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibrary
-shapes.arrows.code.tex"
-File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1 (rcs-revision 1.1)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\s
+hapes\pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 ))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibraryshapes.callouts.code.tex"
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibrary
-shapes.callouts.code.tex"))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibraryshapes.multipart.code.tex"
-File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1 (rcs-revision 1.1)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryshapes.callouts.code.tex
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\s
+hapes\pgflibraryshapes.callouts.code.tex))
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
 
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\s
+hapes\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibrary
-shapes.multipart.code.tex"
-File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1 (rcs-revision 1.2)
 \pgfnodepartlowerbox=\box37
 \pgfnodeparttwobox=\box38
 \pgfnodepartthreebox=\box39
@@ -461,21 +484,21 @@ File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1 (rcs-revision 1.2)
 \pgfnodepartsixbox=\box55
 \pgfnodepartfivebox=\box56
 )))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibraryarrows.code.tex"
-File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1 (rcs-revision 1.1)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.
-code.tex"
-File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1 (rcs-revision 1.16)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\p
+gflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 \arrowsize=\dimen159
 ))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibrarydecorations.pathreplacing.code.tex"
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibrarydecorations.code.tex"
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduledecoration
-s.code.tex"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibrarydecorations.code.tex
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgf
+moduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen160
 \pgfdecoratedremainingdistance=\dimen161
 \pgfdecoratedinputsegmentcompleteddistance=\dimen162
@@ -487,17 +510,17 @@ s.code.tex"
 )
 \tikz@lib@dec@box=\box57
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgfli
-brarydecorations.pathreplacing.code.tex"))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibrarypositioning.code.tex"
-File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1 (rcs-revision 1.7)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\d
+ecorations\pgflibrarydecorations.pathreplacing.code.tex))
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibrarycalc.code.tex"
-File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1 (rcs-revision 1.9)
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlay
+er\tikz\libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 )
-(D:\Projects\2dRPGUnity\jaynik2drpg\doc\diagrams\Combat_system.aux)
+(C:\Data\Projects\jaynik2drpg\doc\diagrams\Combat_system.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
@@ -546,7 +569,8 @@ LaTeX Font Info:    ... okay on input line 11.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-("D:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(C:\Users\dominik.werner\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.m
+kii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count111
 \scratchdimen=\dimen167
@@ -561,32 +585,36 @@ ABD: EveryShipout initializing macros
 \everyMPtoPDFconversion=\toks31
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 53.
+(Font)              <7> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 53.
+(Font)              <5> on input line 54.
 
-Overfull \hbox (161.43655pt too wide) in paragraph at lines 24--105
+Overfull \hbox (161.43655pt too wide) in paragraph at lines 24--109
 [] [] 
  []
 
 [1
 
-{C:/Users/dominik.werner/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(D:\Projects\2dRPGUnity\jaynik2drpg\doc\diagrams\Combat_system.aux) ) 
+]
+Overfull \vbox (126.34235pt too high) has occurred while \output is active []
+
+
+[2{C:/Users/dominik.werner/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(C:\Data\Projects\jaynik2drpg\doc\diagrams\Combat_system.aux) ) 
 Here is how much of TeX's memory you used:
- 14650 strings out of 493921
- 326005 string characters out of 3144849
- 404285 words of memory out of 3000000
- 17702 multiletter control sequences out of 15000+200000
+ 14660 strings out of 493921
+ 329454 string characters out of 3144850
+ 405867 words of memory out of 3000000
+ 17712 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  55i,7n,67p,425b,622s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on Combat_system.pdf (1 page, 34727 bytes).
+<C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on Combat_system.pdf (2 pages, 35516 bytes).
 PDF statistics:
- 17 PDF objects out of 1000 (max. 8388607)
+ 20 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
